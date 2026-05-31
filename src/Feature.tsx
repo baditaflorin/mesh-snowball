@@ -97,7 +97,7 @@ function Body({ room, config }: { room: YRoom; config: MeshConfig }) {
   };
 
   return (
-    <div className="snow-screen">
+    <div className="snow-screen" data-peer-id={room.peerId}>
       <ConfettiLayer />
       <header className="snow-header">
         <h1>snowball</h1>
